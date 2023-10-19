@@ -1,0 +1,16 @@
+<div class="container-fluid g-0">
+  <shared-header
+    [ngClass]="{ 'header-open': sideNavStatus }"
+    (toggle)="sideNavStatus = $event"
+  ></shared-header>
+  <main>
+    <shared-sidenav
+      [sideNavStatus]="sideNavStatus"
+      [ngClass]="{ side: sideNavStatus }"
+    >
+    </shared-sidenav>
+    <div class="display-area" [ngClass]="{ 'area-open': sideNavStatus }">
+      <router-outlet></router-outlet>
+    </div>
+  </main>
+</div>
