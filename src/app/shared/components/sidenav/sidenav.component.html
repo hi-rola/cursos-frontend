@@ -1,0 +1,31 @@
+<div class="side-nav-content">
+  <div class="content">
+    <div class="logo-content">
+      <img src="assets/code.png" alt="Icono Code Line" />
+      <span>Code Line</span>
+    </div>
+    <div class="menu-content">
+      <mat-list>
+        <mat-list-item>
+          <mat-icon matListItemIcon>home</mat-icon>
+          <div matListItemTitle>Home</div>
+        </mat-list-item>
+        <mat-list-item
+          routerLink="/code-line/usuarios"
+          [routerLinkActive]="['is-active']"
+        >
+          <mat-icon matListItemIcon>people_outline</mat-icon>
+          <div matListItemTitle>Usuarios</div>
+        </mat-list-item>
+        <mat-list-item>
+          <mat-icon matListItemIcon>portrait</mat-icon>
+          <div matListItemTitle>Maestros</div>
+        </mat-list-item>
+        <mat-list-item>
+          <mat-icon matListItemIcon>folder_open</mat-icon>
+          <div matListItemTitle>Cursos</div>
+        </mat-list-item>
+      </mat-list>
+    </div>
+  </div>
+</div>
