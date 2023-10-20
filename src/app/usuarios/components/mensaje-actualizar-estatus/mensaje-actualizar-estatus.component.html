@@ -1,0 +1,17 @@
+<h2 mat-dialog-title>Actualizar estatus</h2>
+<mat-dialog-content style="width: 600px">
+  ¿Está seguro de actualizar el estatus del usuario: <b>{{ data.nombre }}</b
+  >?
+</mat-dialog-content>
+<mat-divider></mat-divider>
+<mat-dialog-actions class="m-3" align="center">
+  <button
+    id="btn-actualizar"
+    mat-button
+    [mat-dialog-close]="true"
+    cdkFocusInitial
+  >
+    Actualizar estatus
+  </button>
+  <button mat-button mat-dialog-close>Cancelar</button>
+</mat-dialog-actions>
