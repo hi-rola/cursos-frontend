@@ -1,0 +1,8 @@
+.mat-mdc-form-field-subscript-wrapper {
+  display: none !important;
+}
+
+#btn-registrar {
+  background: #7e51d6;
+  color: white;
+}
