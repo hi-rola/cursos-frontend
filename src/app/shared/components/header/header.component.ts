@@ -12,7 +12,5 @@ export class HeaderComponent {
   cerrar() {
     this.menuStatus = !this.menuStatus;
     this.toggle.emit(this.menuStatus);
-
-    console.log(this.menuStatus);
   }
 }
