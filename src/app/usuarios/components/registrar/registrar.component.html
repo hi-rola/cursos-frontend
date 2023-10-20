@@ -1,0 +1,79 @@
+<h2 mat-dialog-title>Registrar usuario</h2>
+<mat-dialog-content style="width: 700px">
+  <form [formGroup]="form">
+    <div class="row mt-3">
+      <span *ngIf="correoExistente" class="text-center text-danger mb-4">
+        Correo existente, ingrese otro por favor.
+      </span>
+      <div class="col-lg-6">
+        <mat-form-field class="w-100" appearance="outline">
+          <mat-label>Nombre</mat-label>
+          <input matInput formControlName="nombre" />
+          <mat-error *ngIf="campoValido('nombre')" class="text-danger">
+            {{ getCampoError("nombre") }}
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div class="col-lg-6">
+        <mat-form-field class="w-100" appearance="outline">
+          <mat-label>Apellidos</mat-label>
+          <input matInput formControlName="apellidos" />
+          <mat-error *ngIf="campoValido('apellidos')" class="text-danger">
+            {{ getCampoError("apellidos") }}
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div class="col-lg-6">
+        <mat-form-field class="w-100 mt-2" appearance="outline">
+          <mat-label>Correo</mat-label>
+          <input matInput formControlName="correo" />
+          <mat-error *ngIf="campoValido('correo')" class="text-danger">
+            {{ getCampoError("correo") }}
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div class="col-lg-6">
+        <mat-form-field class="w-100 mt-2" appearance="outline">
+          <mat-label>Contraseña</mat-label>
+          <input matInput formControlName="contrasena" />
+          <mat-error *ngIf="campoValido('contrasena')" class="text-danger">
+            {{ getCampoError("contrasena") }}
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div class="col-lg-6">
+        <mat-form-field class="w-100 mt-2" appearance="outline">
+          <mat-label>Edad</mat-label>
+          <input matInput formControlName="edad" />
+          <mat-error *ngIf="campoValido('edad')" class="text-danger">
+            {{ getCampoError("edad") }}
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div class="col-lg-6">
+        <mat-form-field class="w-100 mt-2" appearance="outline">
+          <mat-label>Género</mat-label>
+          <mat-select formControlName="genero">
+            <mat-option value="M"> Masculino </mat-option>
+            <mat-option value="F"> Femenino </mat-option>
+          </mat-select>
+          <mat-error *ngIf="campoValido('genero')" class="text-danger">
+            {{ getCampoError("genero") }}
+          </mat-error>
+        </mat-form-field>
+      </div>
+    </div>
+  </form>
+</mat-dialog-content>
+<mat-divider></mat-divider>
+<mat-dialog-actions class="m-2" align="center">
+  <button
+    id="btn-actualizar"
+    color="primary"
+    mat-button
+    (click)="registrarUsuario()"
+  >
+    Registrar
+  </button>
+  <button id="btn-cancelar" mat-button mat-dialog-close>Cancelar</button>
+</mat-dialog-actions>
