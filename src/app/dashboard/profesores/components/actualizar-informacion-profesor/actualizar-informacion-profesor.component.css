@@ -1,0 +1,11 @@
+.mdc-dialog__title {
+  text-align: center;
+  background-color: #ac99ec;
+  color: white;
+  font-weight: 400;
+}
+
+#btn-actualizar {
+  background-color: #ac99ec;
+  color: white;
+}
