@@ -1,0 +1,112 @@
+<div class="container mt-4">
+  <cursos-card-header [tituloHeader]="tituloHeader"></cursos-card-header>
+  <mat-card class="mt-4 mb-5 p-3">
+    <mat-card-content>
+      <form [formGroup]="form" (ngSubmit)="registrarCurso()">
+        <div class="row mt-4">
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-lg-12">
+                <mat-form-field class="w-100" appearance="outline">
+                  <mat-label>Nombre curso</mat-label>
+                  <textarea matInput formControlName="nombre"></textarea>
+                  <mat-error *ngIf="campoValido('nombre')" class="text-danger">
+                    {{ getCampoError("nombre") }}
+                  </mat-error>
+                </mat-form-field>
+                <mat-form-field class="w-100 mt-2" appearance="outline">
+                  <mat-label>Descripción</mat-label>
+                  <textarea matInput formControlName="descripcion"></textarea>
+                  <mat-error
+                    *ngIf="campoValido('descripcion')"
+                    class="text-danger"
+                  >
+                    {{ getCampoError("descripcion") }}
+                  </mat-error>
+                </mat-form-field>
+                <mat-form-field class="w-100 mt-2" appearance="outline">
+                  <mat-label>Imagen</mat-label>
+                  <input matInput formControlName="imagen" />
+                  <mat-error *ngIf="campoValido('imagen')" class="text-danger">
+                    {{ getCampoError("imagen") }}
+                  </mat-error>
+                </mat-form-field>
+                <mat-form-field class="w-100 mt-2" appearance="outline">
+                  <mat-label>Horas bajo demanda</mat-label>
+                  <input matInput formControlName="horas_demanda" />
+                  <mat-error
+                    *ngIf="campoValido('horas_demanda')"
+                    class="text-danger"
+                  >
+                    {{ getCampoError("horas_demanda") }}
+                  </mat-error>
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 d-flex flex-column justify-content-center align-items-center"
+          >
+            <span class="text-imagen-video">Imagen video:</span>
+            <img
+              class="img-thumbnail mt-5"
+              [src]="this.mostrarImagenCurso()"
+              alt="Imagen del curso"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <mat-form-field class="w-100 mt-2" appearance="outline">
+              <mat-label>Categoria</mat-label>
+              <mat-select formControlName="id_categoria">
+                <mat-option
+                  [value]="categoria.id_categoria"
+                  *ngFor="let categoria of categorias"
+                >
+                  {{ categoria.categoria }}
+                </mat-option>
+              </mat-select>
+              <mat-error
+                *ngIf="campoValido('id_categoria')"
+                class="text-danger"
+              >
+                {{ getCampoError("id_categoria") }}
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div class="col-lg-6">
+            <mat-form-field class="w-100 mt-2" appearance="outline">
+              <mat-label>Profesor</mat-label>
+              <mat-select formControlName="id_usuario">
+                <mat-option
+                  [value]="profesor.id_usuario"
+                  *ngFor="let profesor of profesores"
+                >
+                  {{ profesor.nombre }} {{ profesor.apellidos }}
+                </mat-option>
+              </mat-select>
+              <mat-error *ngIf="campoValido('id_usuario')" class="text-danger">
+                {{ getCampoError("id_usuario") }}
+              </mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="row mt-4 mb-4">
+          <div class="col-lg-12 d-flex justify-content-center gap-5">
+            <button mat-raised-button type="submit" class="col-lg-4">
+              Registrar
+            </button>
+            <button
+              routerLink="/code-line/cursos"
+              mat-raised-button
+              class="col-lg-4"
+            >
+              Cancelar
+            </button>
+          </div>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>
