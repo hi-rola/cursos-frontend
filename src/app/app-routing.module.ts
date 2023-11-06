@@ -8,9 +8,19 @@ const routes: Routes = [
     loadChildren: () => import('./auth/auth.module').then((m) => m.AuthModule),
   },
   {
-    path: 'code-line',
+    path: 'dashboard',
     loadChildren: () =>
       import('./usuarios/usuarios.module').then((m) => m.UsuariosModule),
+  },
+  {
+    path: 'dashboard2',
+    loadChildren: () =>
+      import('./dashboard/dashboard.module').then((m) => m.DashboardModule),
+  },
+  {
+    path: 'code-line',
+    loadChildren: () =>
+      import('./cursos/cursos.module').then((m) => m.CursosModule),
   },
   {
     path: '404',

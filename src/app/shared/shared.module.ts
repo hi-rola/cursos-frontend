@@ -6,6 +6,10 @@ import { MainPageComponent } from './pages/main-page/main-page.component';
 import { Error404PageComponent } from './pages/error404-page/error404-page.component';
 import { RouterModule } from '@angular/router';
 import { MaterialModule } from '../material/material.module';
+import {
+  EstatusUsuarioSlideTogglePipe,
+  EstatusUsuarioTablePipe,
+} from './pipes/estatus-usuario.pipe';
 
 @NgModule({
   declarations: [
@@ -13,6 +17,8 @@ import { MaterialModule } from '../material/material.module';
     HeaderComponent,
     MainPageComponent,
     Error404PageComponent,
+    EstatusUsuarioTablePipe,
+    EstatusUsuarioSlideTogglePipe,
   ],
   imports: [CommonModule, RouterModule, MaterialModule],
   exports: [
@@ -20,6 +26,8 @@ import { MaterialModule } from '../material/material.module';
     MainPageComponent,
     SidenavComponent,
     HeaderComponent,
+    EstatusUsuarioTablePipe,
+    EstatusUsuarioSlideTogglePipe,
   ],
 })
 export class SharedModule {}

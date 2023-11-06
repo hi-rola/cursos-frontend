@@ -74,3 +74,30 @@ shared-sidenav {
   background-color: #c7bef4 !important;
   border-radius: 30px !important;
 }
+
+.bg-primary {
+  background: #673ab7;
+}
+
+.bg-secondary {
+  background: #7e51d6;
+}
+
+.bg-alternative {
+  background: #9070e2;
+}
+
+.bg-alternative-2 {
+  background: #a5b4fc;
+}
+
+.bg-alternative-3 {
+  background: #c7bef4;
+}
+
+.course-header {
+  padding: 12px !important;
+  color: #fff;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}

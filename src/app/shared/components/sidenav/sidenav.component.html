@@ -6,22 +6,31 @@
     </div>
     <div class="menu-content">
       <mat-list>
-        <mat-list-item>
-          <mat-icon matListItemIcon>home</mat-icon>
-          <div matListItemTitle>Home</div>
+        <mat-list-item
+          routerLink="/dashboard2/estadisticas"
+          [routerLinkActive]="['is-active']"
+        >
+          <mat-icon matListItemIcon>bar_chart</mat-icon>
+          <div matListItemTitle>Estadísticos</div>
         </mat-list-item>
         <mat-list-item
-          routerLink="/code-line/usuarios"
+          routerLink="/dashboard/usuarios"
           [routerLinkActive]="['is-active']"
         >
           <mat-icon matListItemIcon>people_outline</mat-icon>
           <div matListItemTitle>Usuarios</div>
         </mat-list-item>
-        <mat-list-item>
+        <mat-list-item
+          routerLink="/dashboard2/profesores"
+          [routerLinkActive]="['is-active']"
+        >
           <mat-icon matListItemIcon>portrait</mat-icon>
           <div matListItemTitle>Maestros</div>
         </mat-list-item>
-        <mat-list-item>
+        <mat-list-item
+          routerLink="/code-line/cursos"
+          [routerLinkActive]="['is-active']"
+        >
           <mat-icon matListItemIcon>folder_open</mat-icon>
           <div matListItemTitle>Cursos</div>
         </mat-list-item>

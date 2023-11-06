@@ -27,9 +27,10 @@ export class RegistrarComponent {
       ],
     ],
     contrasena: ['', Validators.required],
-    edad: [, Validators.required],
+    edad: ['', Validators.required],
     genero: ['', Validators.required],
     rol: [1],
+    estado: [1],
   });
 
   correoExistente = false;
@@ -65,6 +66,7 @@ export class RegistrarComponent {
     this.usuariosService
       .registrar(this.getUsuarioForm())
       .subscribe((response) => {
+        console.log(response);
         switch (response) {
           case 'Correo existente, ingrese otro por favor':
             this.correoExistente = true;
