@@ -1,0 +1,20 @@
+.username {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+mat-expansion-panel-content {
+  display: none !important;
+}
+
+.mat-mdc-button:first-child {
+  width: 150px;
+  border-radius: 20px;
+}
+
+.mat-mdc-button:nth-child(2) {
+  width: 150px;
+  background: #a5b4fc !important;
+  color: white !important;
+  border-radius: 20px;
+}
