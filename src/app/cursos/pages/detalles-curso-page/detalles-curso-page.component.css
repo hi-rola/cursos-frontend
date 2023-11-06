@@ -1,0 +1,40 @@
+.mat-mdc-card-content {
+  padding-bottom: 0px !important;
+}
+
+.curso-imagen {
+  width: 350px;
+}
+
+.curso-nombre {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.curso-descripcion {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 2;
+}
+
+.text-valoraciones {
+  font-size: 16px;
+  font-weight: 500;
+  height: 40px;
+}
+
+.star-valoraciones {
+  width: 25px;
+}
+
+.curso-contenido {
+  border-right: 1px solid #dcdcdc;
+}
+
+.mat-mdc-raised-button {
+  width: 250px;
+  margin-top: 10px;
+  background: #a5b4fc !important;
+  color: white !important;
+  border-radius: 20px;
+}

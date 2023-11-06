@@ -1,0 +1,44 @@
+<div class="container mt-4">
+  <cursos-card-header [tituloHeader]="curso?.categoria"></cursos-card-header>
+  <mat-card class="rounded-5 mt-5">
+    <mat-card-content>
+      <div class="row d-flex mt-3 p-4">
+        <div class="col-lg-7 curso-contenido">
+          <p class="curso-nombre">{{ curso?.nombre }}</p>
+          <p class="curso-descripcion">{{ curso?.descripcion }}</p>
+          <span class="d-flex align-items-center gap-3 text-valoraciones mt-4">
+            <img
+              src="assets/star.svg"
+              class="star-valoraciones"
+              alt="Valoraciones curso"
+            />
+            4.8 Valoraciones del curso
+          </span>
+        </div>
+        <div class="col-lg-5 d-flex flex-column">
+          <div class="col-lg-12 d-flex justify-content-around">
+            <img
+              class="curso-imagen"
+              [src]="curso?.imagen"
+              [alt]="curso?.nombre"
+            />
+          </div>
+          <div class="col-lg-12 d-flex flex-column align-items-center">
+            <span class="d-flex align-items-center mt-2 gap-3"
+              >Creado por: {{ curso?.nombre_profesor }}
+              {{ curso?.apellidos_profesor }}</span
+            >
+            <span class="d-flex align-items-center gap-3 mt-2"
+              ><mat-icon>ondemand_video</mat-icon>{{ curso?.horas_demanda }} de
+              video bajo demanda</span
+            >
+            <button mat-raised-button class="btn-suscribirse">
+              Suscribirse
+            </button>
+          </div>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+  <cursos-comentarios></cursos-comentarios>
+</div>
