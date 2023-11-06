@@ -1,0 +1,16 @@
+.mat-mdc-card-title {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.titulo-curso {
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+}
+
+.descripcion-curso {
+  font-weight: 400;
+  font-size: 13px;
+  text-align: center;
+}
