@@ -1,0 +1,18 @@
+.text-imagen-video {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.mat-mdc-raised-button:first-child {
+  background: #a5b4fc;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.mat-mdc-raised-button:nth-child(2) {
+  background: #efefef;
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+}
