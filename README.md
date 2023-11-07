@@ -13,19 +13,19 @@
 # CodeLine: Registrar usuario
 ![image](https://github.com/hi-rola/cursos-frontend-angular-angularMaterial-JWT/assets/44506663/7c6c0b21-91d3-4c88-a9b8-7e5a0c71ab06)
 
-# CodeLine: Registrar actualizar información usuario
+# CodeLine: Actualizar información usuario
 ![image](https://github.com/hi-rola/cursos-frontend-angular-angularMaterial-JWT/assets/44506663/0232e180-1d3f-496d-a4a6-50e482df54f8)
 
-# CodeLine: Registrar actualizar estatus usuario
+# CodeLine: Actualizar estatus usuario
 ![image](https://github.com/hi-rola/cursos-frontend-angular-angularMaterial-JWT/assets/44506663/c6fcf625-cf78-41b6-a5d9-b84ebbe3374a)
 
-
-# CodeLine: Registrar buscar usuario
+# CodeLine: Buscar usuario
 ![image](https://github.com/hi-rola/cursos-frontend-angular-angularMaterial-JWT/assets/44506663/a1b0f1f1-cb3e-4309-89fd-0de96e00b617)
 
 
 # CodeLine: Profesores (misma funcionalidad que usuarios)
 ![image](https://github.com/hi-rola/cursos-frontend-angular-angularMaterial-JWT/assets/44506663/c1517d52-dbec-40d0-8d2c-2302e2f0c07d)
+
 
 # CodeLine: Cursos
 ![image](https://github.com/hi-rola/cursos-frontend-angular-angularMaterial-JWT/assets/44506663/b109e7e6-8027-4404-98fb-28ce93c1178c)
