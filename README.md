@@ -1,3 +1,11 @@
+# CursosFrontend: Login
+![image](https://github.com/hi-rola/cursos-frontend-angular-angularMaterial-JWT/assets/44506663/018bb5c3-e0cb-4fec-8abc-04f555551904)
+
+
+# CursosFrontend: Regístrate
+![image](https://github.com/hi-rola/cursos-frontend-angular-angularMaterial-JWT/assets/44506663/5acdac0a-73f5-417c-a18c-2aada1f6d647)
+
+
 # CursosFrontend
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.9.
